@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UseXMLFileDecorateView"></activity>
+        <activity android:name=".FragmentShow"></activity>
     </application>
 
 </manifest>

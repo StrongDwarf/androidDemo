@@ -25,15 +25,21 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        findViewById(R.id.btn_useXMLFileDecorateView).setOnClickListener(this);
+        findViewById(R.id.btn_fragment).setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.test2:
-
+            case R.id.btn_useXMLFileDecorateView:
+                Intent intent = new Intent(MainActivity.this,UseXMLFileDecorateView.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_fragment:
+                Intent intent1 = new Intent(MainActivity.this,FragmentShow.class);
+                startActivity(intent1);
                 break;
         }
     }

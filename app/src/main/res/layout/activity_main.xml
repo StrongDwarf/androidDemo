@@ -6,7 +6,16 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/test2"
+        android:id="@+id/btn_useXMLFileDecorateView"
         android:text="使用xml文件修饰view"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_showActivity"
+        android:text="Activity相关操作"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_fragment"
+        android:text="Fragment探索"/>
 </LinearLayout>
