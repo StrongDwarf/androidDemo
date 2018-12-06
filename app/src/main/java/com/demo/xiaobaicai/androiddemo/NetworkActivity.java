@@ -8,12 +8,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
 
 
 public class NetworkActivity extends AppCompatActivity implements  View.OnClickListener{
@@ -26,6 +30,10 @@ public class NetworkActivity extends AppCompatActivity implements  View.OnClickL
 
         findViewById(R.id.btn_get).setOnClickListener(this);
         findViewById(R.id.btn_post).setOnClickListener(this);
+        findViewById(R.id.btn_gson_fromJson).setOnClickListener(this);
+        findViewById(R.id.btn_gson_to_list).setOnClickListener(this);
+        findViewById(R.id.btn_gson_to_map).setOnClickListener(this);
+        findViewById(R.id.btn_gson_to_string).setOnClickListener(this);
         tvcontent = findViewById(R.id.tv_content);
     }
 
@@ -141,6 +149,38 @@ public class NetworkActivity extends AppCompatActivity implements  View.OnClickL
                         }
                     });
                     break;
+                case R.id.btn_gson_fromJson:
+                    String jsonStr = "{'name':'xiaobaicai','age':21}";
+                    final User user = (new Gson()).fromJson(jsonStr,User.class);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            tvcontent.setText("user:"+user.toString());
+                        }
+                    });
+                    break;
+                case R.id.btn_gson_to_list:
+                    String jsonStr1="[{'name':'Uini','age':30},{'name','Lina','age':10}]";
+                    final List<User> users = (new Gson()).fromJson(jsonStr1,new TypeToken<List<User>>(){}.getType());
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            tvcontent.setText("user:懒，不显示了");
+                        }
+                    });
+                    break;
+                case R.id.btn_gson_to_string:
+                    User user2 = new User();
+                    user2.setAge(111);
+                    user2.setName("xiaobaicai");
+                    final String jsonStr2 = (new Gson()).toJson(user2);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            tvcontent.setText("user:"+jsonStr2);
+                        }
+                    });
+
             }
         }
     }

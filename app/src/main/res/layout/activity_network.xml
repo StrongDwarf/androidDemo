@@ -13,6 +13,28 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_post"
         android:text="使用post方式向服务器提交数据"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用gson将对象转化成字符串"
+        android:id="@+id/btn_gson_fromJson"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用gson转化数组"
+        android:id="@+id/btn_gson_to_list"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用gson解析成map"
+        android:id="@+id/btn_gson_to_map"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将对象解析成字符串"
+        android:id="@+id/btn_gson_to_string" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
