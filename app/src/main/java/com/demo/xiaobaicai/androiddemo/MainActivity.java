@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         findViewById(R.id.btn_useXMLFileDecorateView).setOnClickListener(this);
         findViewById(R.id.btn_fragment).setOnClickListener(this);
         findViewById(R.id.btn_tabbar).setOnClickListener(this);
+        findViewById(R.id.btn_thread).setOnClickListener(this);
+        findViewById(R.id.btn_network).setOnClickListener(this);
     }
 
 
@@ -45,6 +47,14 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
             case R.id.btn_tabbar:
                 Intent intent2 = new Intent(MainActivity.this,TabBarActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.btn_thread:
+                Intent intent3 = new Intent(MainActivity.this,ThreadActivity.class);
+                startActivity(intent3);
+                break;
+            case R.id.btn_network:
+                Intent intent4 = new Intent(MainActivity.this,NetworkActivity.class);
+                startActivity(intent4);
                 break;
         }
     }

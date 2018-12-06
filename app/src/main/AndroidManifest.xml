@@ -19,6 +19,8 @@
         <activity android:name=".UseXMLFileDecorateView"></activity>
         <activity android:name=".FragmentShow"></activity>
         <activity android:name=".TabBarActivity"></activity>
+        <activity android:name=".ThreadActivity"></activity>
+        <activity android:name=".NetworkActivity"></activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

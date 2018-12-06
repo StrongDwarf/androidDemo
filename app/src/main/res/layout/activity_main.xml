@@ -23,4 +23,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_tabbar"
         android:text="实现底部导航条"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_thread"
+        android:text="多线程样例"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_network"
+        android:text="网络编程与数据存储"/>
 </LinearLayout>
