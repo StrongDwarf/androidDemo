@@ -2,6 +2,7 @@ package com.demo.xiaobaicai.androiddemo;
 
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -34,9 +35,26 @@ public class NetworkActivity extends AppCompatActivity implements  View.OnClickL
         findViewById(R.id.btn_gson_to_list).setOnClickListener(this);
         findViewById(R.id.btn_gson_to_map).setOnClickListener(this);
         findViewById(R.id.btn_gson_to_string).setOnClickListener(this);
+        findViewById(R.id.btn_okh).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_storage).setOnClickListener(onClickListener);
         tvcontent = findViewById(R.id.tv_content);
     }
 
+    private View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.btn_okh:
+                    Intent intent = new Intent(NetworkActivity.this,okHActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_storage:
+                    Intent intent1 = new Intent(NetworkActivity.this,StorageActivity.class);
+                    startActivity(intent1);
+                    break;
+            }
+        }
+    };
 
     @Override
     public void onClick(View v) {
@@ -180,7 +198,7 @@ public class NetworkActivity extends AppCompatActivity implements  View.OnClickL
                             tvcontent.setText("user:"+jsonStr2);
                         }
                     });
-
+                    break;
             }
         }
     }

@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         findViewById(R.id.btn_tabbar).setOnClickListener(this);
         findViewById(R.id.btn_thread).setOnClickListener(this);
         findViewById(R.id.btn_network).setOnClickListener(this);
+        findViewById(R.id.btn_android_high).setOnClickListener(this);
     }
 
 
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
             case R.id.btn_network:
                 Intent intent4 = new Intent(MainActivity.this,NetworkActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.btn_android_high:
+                Intent intent5 = new Intent(MainActivity.this,AndroidhighActivity.class);
+                startActivity(intent5);
                 break;
         }
     }

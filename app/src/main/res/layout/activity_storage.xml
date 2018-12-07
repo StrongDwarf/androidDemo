@@ -6,49 +6,47 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_get"
-        android:text="使用get方式向服务器提交数据"/>
+        android:id="@+id/btn_set_storage"
+        android:text="存储数据"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_post"
-        android:text="使用post方式向服务器提交数据"/>
+        android:id="@+id/btn_get_storage"
+        android:text="获取数据"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="使用gson将对象转化成字符串"
-        android:id="@+id/btn_gson_fromJson"/>
+        android:id="@+id/btn_create_db"
+        android:text="创建sqlite数据库"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="使用gson转化数组"
-        android:id="@+id/btn_gson_to_list"/>
+        android:id="@+id/btn_insert_value"
+        android:text="向数据库中插入一个值"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="使用gson解析成map"
-        android:id="@+id/btn_gson_to_map"
-        />
+        android:id="@+id/btn_update_value"
+        android:text="修改数据库中的一条记录" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="将对象解析成字符串"
-        android:id="@+id/btn_gson_to_string" />
+        android:id="@+id/btn_find_all_value"
+        android:text="查找用户表中所有数据"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_okh"
-        android:text="使用OKHttp"/>
+        android:id="@+id/btn_delete_value"
+        android:text="删除一条记录"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_storage"
-        android:text="数据存储"/>
-
-    <TextView
+        android:id="@+id/btn_get_sdcard"
+        android:text="获取sd卡目录"/>
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_content"
-        android:text="服务器返回的数据"/>
+        android:id="@+id/btn_get_appcard"
+        android:text="获取应用程序目录"/>
 
 </LinearLayout>
