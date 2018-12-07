@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.demo.xiaobaicai.androiddemo.okHttp.HTTPCaller;
 import com.demo.xiaobaicai.androiddemo.okHttp.HttpConfig;
+import com.demo.xiaobaicai.androiddemo.utils.Utils;
 
 public class MyApplication extends Application {
     @Override
@@ -17,7 +18,7 @@ public class MyApplication extends Application {
 
         //可以添加一些公共字段，每个接口都会带上
         httpConfig.addCommonField("pf","android");
-        httpConfig.addCommonField("version_code","1");
+        httpConfig.addCommonField("version_code",""+Utils.getVersionCode(getApplicationContext()));
 
         //初始化HTTPCaller类
         HTTPCaller.getInstance().setHttpConfig(httpConfig);

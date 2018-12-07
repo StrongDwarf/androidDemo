@@ -26,8 +26,13 @@
         <activity android:name=".StorageActivity"></activity>
         <activity android:name=".AndroidhighActivity"></activity>
         <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".OftenfuncActivity"></activity>
+        <activity android:name=".LauncherActivity"></activity>
+        <activity android:name=".FirstLauncherActivity"></activity>
+        <activity android:name=".BannerActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
 </manifest>

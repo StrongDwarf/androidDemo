@@ -43,4 +43,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_often_func"
         android:text="常用功能模块"/>
+
 </LinearLayout>

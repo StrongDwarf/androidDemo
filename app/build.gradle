@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'xiaobaicai'
+            keyPassword 'xiaobaicai'
+            storeFile file('/Users/bm/Desktop/appkey/makeapp.kjs')
+            storePassword 'xiaobaicai'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.demo.xiaobaicai.androiddemo"
