@@ -1,10 +1,8 @@
 package com.demo.xiaobaicai.androiddemo;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,7 +11,6 @@ import com.demo.xiaobaicai.androiddemo.fragment.DynamicFragment;
 import com.demo.xiaobaicai.androiddemo.fragment.HomeFragment;
 import com.demo.xiaobaicai.androiddemo.fragment.MessageFragment;
 import com.demo.xiaobaicai.androiddemo.fragment.PersonFragment;
-
 
 public class TabBarActivity extends FragmentActivity{
     //要切换显示的四个Fragment

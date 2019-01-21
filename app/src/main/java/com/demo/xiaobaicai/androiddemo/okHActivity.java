@@ -31,14 +31,14 @@ public class okHActivity extends AppCompatActivity implements  View.OnClickListe
         switch (v.getId()){
             case R.id.btn_get:
                 //发送get请求
-                HTTPCaller.getInstance().get(User.class,"http://192.168.43.74:8083/test",null,requestDataCallback);
+                HTTPCaller.getInstance().get(User.class,"http://192.168.43.74:9001/test?name=xiaobaicai",null,requestDataCallback);
                 break;
             case R.id.btn_post:
                 //发送post请求
                 List<NameValuePair> postParam = new ArrayList<>();
                 postParam.add(new NameValuePair("username","xiaobaicai"));
                 postParam.add(new NameValuePair("password","hello,world"));
-                HTTPCaller.getInstance().post(User.class,"http://192.168.43.74:8083/test",null,postParam,requestDataCallback);
+                HTTPCaller.getInstance().post(User.class,"http://192.168.43.74:9001/test",null,postParam,requestDataCallback);
                 break;
         }
     }

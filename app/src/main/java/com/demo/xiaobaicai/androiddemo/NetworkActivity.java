@@ -102,7 +102,6 @@ public class NetworkActivity extends AppCompatActivity implements  View.OnClickL
             connection.setDoOutput(true);
             OutputStream outputStream = connection.getOutputStream();
             outputStream.write(data.getBytes());
-
             if(connection.getResponseCode() == 200){
                 //状态码==200 请求成功
                 InputStream is = connection.getInputStream();
